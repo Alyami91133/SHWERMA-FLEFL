@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> شاورما فليفل</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="nav-continer">
+        <nav>
+            <div class="logo">
+                <img src="imgs/logo.png" alt="Logo">
+            </div>
+            <div class="nav-menu-btn">
+             <a href="#menu">المنيو</a>
+            </div>
+        </nav>
+    </div>
+
+    <section class="hero" id="hero">
+        <div class="hero-stuff">
+        <video src="imgs/vid.mp4" autoplay muted loop></video>
+        <div class="hero-content">
+        <div class="hero-text">
+        <h1>شاورما فليفل</h1>
+        <p>هذا الموقع مخصص لعرض وجبتنا</p>
+        </div>
+        <div class="hero-arrow">
+        <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="menu-stuff">
+            <div class="menu-header">
+                <h1>المنيو</h1>
+                <p>اكتشف تشكيلتنا الواسعة من الأطباق الشهية</p>
+                
+                <!-- خانة البحث -->
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="ابحث عن طبق معين...">
+                </div>
+                
+                <!-- أزرار التحكم -->
+                <div class="menu-controls">
+                    <button id="expandAll" class="control-btn">عرض الكل</button>
+                    <button id="collapseAll" class="control-btn">إخفاء الكل</button>
+                </div>
+            </div>
+
+            <div class="info">
+                <p>يوجدلدينا فطور صباحي <br>سندوتشات بانواعها</p>
+            </div>
+
+
+            <div class="menu-grid">
+                <!-- قسم الشاورما -->
+                 
+                <div class="menu-category" data-category="شاورما">
+                    <img src="imgs/شاورما.jpg" alt="شاورما" class="category-image">
+                    <div class="category-header">
+                        <h2 class="category-title">شاورما</h2>
+                        <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">شاورما صغير<span class="item-calories">475 كالوري</span></span>
+                            <span class="item-price">٣ ريال</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">شاورما صاروخ<span class="item-calories">967 كالوري</span></span>
+                            <span class="item-price">٦ ريال</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">شاورما عربي<span class="item-calories">500 كالوري</span></span>
+                            <span class="item-price">١٠ ريال</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">شاورما عربي دبل<span class="item-calories">1509 كالوري</span></span>
+                            <span class="item-price">١٣ ريال</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">صحن شاورما شرايح<span class="item-calories">500 كالوري</span></span>
+                            <span class="item-price">٢٢ ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- قسم ساندوتش مسحب -->
+                <div class="menu-category" data-category="مسحب">
+                <img src="imgs/مسحب.webp" alt="مسحب" class="category-image">
+                    <div class="category-header">
+                        <h2 class="category-title">ساندوتش مسحب</h2>
+                        <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">ساندوتش مسحب عادي<span class="item-calories">277 كالوري</span></span>
+                            <span class="item-price">٥ ريال</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">ساندوتش مسحب حراق<span class="item-calories">350 كالوري</span></span>
+                            <span class="item-price">٥ ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- قسم البرجر -->
+                <div class="menu-category" data-category="برجر">
+                <img src="imgs/برجر.jpg" alt="برجر" class="category-image">
+                    <div class="category-header">
+                        <h2 class="category-title">البرجر</h2>
+                        <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">برجر دجاج<span class="item-calories">200 كالوري</span></span>
+                            <span class="item-price">٤ ريال</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">برجر دجاج دبل<span class="item-calories">450 كالوري</span></span>
+                            <span class="item-price">٦ ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- قسم المشروبات -->
+                <div class="menu-category" data-category="مشروبات">
+                <img src="imgs/مشروبات.jpg" alt="مشروبات" class="category-image">
+                    <div class="category-header">
+                        <h2 class="category-title">المشروبات</h2>
+                        <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">مشروبات غازية<span class="item-calories">138 كالوري</span></span>
+                            <span class="item-price">٢ ريال</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">عصير ربيع<span class="item-calories">150 كالوري</span></span>
+                            <span class="item-price">٢ ريال</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">شاي<span class="item-calories">15 كالوري</span></span>
+                            <span class="item-price">١ ريال</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">حليب عدني<span class="item-calories">20 كالوري</span></span>
+                            <span class="item-price">2 ريال</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">ماء<span class="item-calories">1 كالوري</span></span>
+                            <span class="item-price">١ ريال</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- قسم الصوصات -->
+                <div class="menu-category" data-category="صوصات">
+                <img src="imgs/صوصات.jpg" alt="صوصات" class="category-image">
+                    <div class="category-header">
+                        <h2 class="category-title">الصوصات</h2>
+                        <button class="toggle-btn"><i class="fas fa-chevron-down"></i></button>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">ثوم / كاتشب / كوكتيل<span class="item-calories">150 كالوري</span></span>
+                            <span class="item-price">١ ريال</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- قسم تواصل معنا -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">تواصل معنا</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>اتصل بنا</h3>
+                            <p>+966 50 669 4442</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>موقعنا</h3>
+                            <p>خميس مشيط, حي الحسام</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>ساعات العمل</h3>
+                            <p>يومياً من 6 صباحاً - 12 الليل</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>واتساب</h3>
+                            <p>+966 50 669 4442</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+<iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d388.3700835212444!2d42.69035846817727!3d18.322988189347555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15fb50b9b2db9871%3A0x72af7ff265acb210!2z2YXYr9ix2LPYqSDZhtmH2LEg2KfZhNi52YTZiNmF!5e1!3m2!1sen!2ssa!4v1765194304255!5m2!1sen!2ssa"  
+    width="100%" 
+    height="100%" 
+    style="border:0; border-radius: 15px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2025 شاورما فليفل</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
